@@ -1,7 +1,15 @@
 module.exports = {
-  indexPath: "node_modules/@hollysys-mirco-front-end/core/index.html",
+  filenameHashing: false,
   devServer: {
     port: 9000
+  },
+  configureWebpack: {
+    entry: {
+      index: "./src/index.js"
+    },
+    output: {
+      libraryTarget: "umd"
+    }
   },
   chainWebpack: config => {
     config.plugin("html").tap(args => {

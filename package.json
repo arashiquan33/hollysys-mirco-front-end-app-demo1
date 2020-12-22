@@ -1,8 +1,8 @@
 {
-  "name": "@hollysys-mirco-front-end/hollysys-mirco-front-end-app-demo1",
+  "name": "@hollysys-mirco-front-end/app-demo1",
   "version": "1.0.0",
   "description": "微前端应用示例",
-  "main": "dist/main.js",
+  "main": "dist/js/index.js",
   "scripts": {
     "serve": "vue-cli-service serve",
     "build": "vue-cli-service build",
@@ -22,7 +22,7 @@
   },
   "homepage": "https://github.com/arashiquan33/hollysys-mirco-front-end-app-demo1#readme",
   "dependencies": {
-    "@hollysys-mirco-front-end/core": "^1.0.2",
+    "@hollysys-mirco-front-end/core": "^1.0.8",
     "core-js": "^3.6.5",
     "vue": "^2.6.11"
   },
