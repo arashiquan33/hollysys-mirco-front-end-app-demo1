@@ -1,11 +1,12 @@
 {
   "name": "@hollysys-mirco-front-end/app-demo1",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "微前端应用示例",
   "main": "dist/js/index.js",
   "scripts": {
     "serve": "vue-cli-service serve",
     "build": "vue-cli-service build",
+    "build:lib": "vue-cli-service build --target lib --formats umd --name demo1.js src/index.js",
     "lint": "vue-cli-service lint"
   },
   "repository": {
