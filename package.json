@@ -1,6 +1,6 @@
 {
   "name": "@hollysys-mirco-front-end/app-demo1",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "微前端应用示例",
   "main": "dist/js/index.js",
   "scripts": {
