@@ -1,13 +1,14 @@
 {
   "name": "@hollysys-mirco-front-end/app-demo1",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "微前端应用示例",
   "main": "dist/js/index.js",
   "scripts": {
     "serve": "vue-cli-service serve",
     "build": "vue-cli-service build",
-    "build:lib": "vue-cli-service build --target lib --formats umd --name demo1.js src/index.js",
-    "lint": "vue-cli-service lint"
+    "build:lib": "set build_lib=true && vue-cli-service build --target lib --dest ./dist/lib --name myLib ./src/main.js",
+    "lint": "vue-cli-service lint",
+    "webpack": "webpack"
   },
   "repository": {
     "type": "git",
@@ -23,7 +24,7 @@
   },
   "homepage": "https://github.com/arashiquan33/hollysys-mirco-front-end-app-demo1#readme",
   "dependencies": {
-    "@hollysys-mirco-front-end/core": "^1.0.8",
+    "@hollysys-mirco-front-end/core": "^1.0.9",
     "core-js": "^3.6.5",
     "vue": "^2.6.11"
   },
@@ -37,6 +38,8 @@
     "eslint-plugin-prettier": "^3.1.3",
     "eslint-plugin-vue": "^6.2.2",
     "prettier": "^1.19.1",
-    "vue-template-compiler": "^2.6.11"
+    "vue-template-compiler": "^2.6.11",
+    "webpack": "5.11.0",
+    "webpack-cli": "3"
   }
 }
