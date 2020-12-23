@@ -1,7 +1,7 @@
 import Vue from "vue";
 import App from "./App.vue";
 import { HollysysMircoFrontEndApp } from "@hollysys-mirco-front-end/core";
-Vue.config.productionTip = false;
+//Vue.config.productionTip = false;
 
 const myApp = new HollysysMircoFrontEndApp({
   name: process.env.npm_package_name,

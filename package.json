@@ -8,6 +8,7 @@
     "build": "vue-cli-service build",
     "build:lib": "set build_lib=true && vue-cli-service build --target lib --dest ./dist/lib --name myLib ./src/main.js",
     "lint": "vue-cli-service lint",
+    "publish": "npm publish --access public",
     "webpack": "webpack"
   },
   "repository": {
