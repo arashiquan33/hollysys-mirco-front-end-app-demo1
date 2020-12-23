@@ -1,1 +1,4 @@
-export default class Demo1{}
+let webpackDemo = {
+  val: "hello webpack"
+};
+export { webpackDemo};

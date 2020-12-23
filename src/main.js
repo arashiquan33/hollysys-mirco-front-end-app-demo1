@@ -1,26 +1,22 @@
-
 import Vue from "vue";
 import App from "./App.vue";
-// import {
-//   HollysysAppManager,
-//   AbstractHollysysMircoFrontEndApp
-// } from "@hollysys-mirco-front-end/core";
-
+import { HollysysMircoFrontEndApp } from "@hollysys-mirco-front-end/core";
 Vue.config.productionTip = false;
 
-// new HollysysAppManager({
-//   name:"",
-//   install:function(mountTo,props,store){
-//     new Vue({
-//       render: h => h(App)
-//     }).$mount(mountTo);
-//   },
-//   uninstall:function(){
+const myApp = new HollysysMircoFrontEndApp({
+  name: process.env.npm_package_name,
+  pathPrefix: "/demo1",
+  beforeInstall: function() {},
+  install: function(mountTo, props) {
+    this.instance = new Vue({
+      props,
+      render: h => h(App)
+    }).$mount(mountTo);
+  },
+  uninstall: function() {
+    this.install = null;
+  },
+  beforeUninstall: function() {}
+});
 
-//   }
-// })
-//HollysysAppManager.registryApp()
-
-new Vue({
-  render: h => h(App)
-}).$mount("#app");
+export default myApp;
