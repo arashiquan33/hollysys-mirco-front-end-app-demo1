@@ -1,28 +1,34 @@
 <template>
-  <div id="app">
-    <img alt="Vue logo" src="./assets/logo.png" />
-    <HelloWorld msg="Welcome to Your Vue.js App" />
+  <div class="hollysys-mirco-front-end-app-vue-example">
+    <div class="top">
+      <router-link to="/helloWorld">go to helloworld</router-link>
+      <router-link to="/helloChina">go to hellochina</router-link>
+    </div>
+    <div class="content">
+      <router-view></router-view>
+    </div>
   </div>
 </template>
 
 <script>
-import HelloWorld from "./components/HelloWorld.vue";
-
 export default {
-  name: "App",
-  components: {
-    HelloWorld
-  }
+  name: "App"
 };
 </script>
-
-<style>
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
+<style lang="scss" scoped>
+.hollysys-mirco-front-end-app-vue-example {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  .top {
+    height: 100px;
+    display: flex;
+    flex-shrink: 0;
+  }
+  .content {
+    display: flex;
+    flex-grow: 1;
+  }
 }
 </style>

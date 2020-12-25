@@ -1,5 +1,6 @@
 import Vue from "vue";
 import App from "./App.vue";
+ import router from "./router";
 import {
   HollysysMircoFrontEndApp,
   HollysysMircoFrontEndAppManager
@@ -16,6 +17,7 @@ const hollysysMircoFrontEndAppVueExample = new HollysysMircoFrontEndApp({
   install: function({ mountTo, props }) {
     this.instance = new Vue({
       props,
+      router,
       render: h => h(App)
     }).$mount(mountTo);
     return Promise.resolve();

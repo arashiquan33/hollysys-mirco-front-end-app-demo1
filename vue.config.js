@@ -6,7 +6,6 @@ module.exports = {
   devServer: {
     port: 9000
   },
-
   chainWebpack: config => {
     if (!isBuildLib) {
       //将微应用的html模板指向@hollysys-mirco-front-end/framework这个npm package中暴露的standalone.html
@@ -30,8 +29,12 @@ module.exports = {
       },
       externals: [
         {
-          //import Vue from 'vue',将vue指向script引入的vue脚本带来的window全局变量Vue
-          vue: "Vue"
+          //import Vue from 'vue',将vue指向script引入的vue
+          "vue": "Vue"
+        },
+        {
+          //import VueRouter from 'vue-router',将vueRouter指向script引入的vue-router
+          "vue-router": "VueRouter"
         },
         //import {HollysysMircoFrontEndApp} from '@hollysys-mirco-front-end/framework'
         //将@hollysys-mirco-front-end/framework指向script引入的脚本，该脚本umd格式，在window上挂载了对象hollysysMircoFrontEndFramework

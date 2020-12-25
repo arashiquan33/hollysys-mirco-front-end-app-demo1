@@ -1,12 +1,12 @@
 <template>
-  <div class="hello">
-    <h1>this is helloworld component</h1>
+  <div class="china">
+    <h1>this is hellochina component</h1>
   </div>
 </template>
 
 <script>
 export default {
-  name: "HelloWorld"
+  name: "HelloChina"
 };
 </script>
 
