@@ -878,10 +878,10 @@
   dependencies:
     "@hapi/hoek" "^8.3.0"
 
-"@hollysys-mirco-front-end/core@^1.2.0":
-  version "1.2.0"
-  resolved "https://registry.npmjs.org/@hollysys-mirco-front-end/core/-/core-1.2.0.tgz#ecb4c15b3e0de81c7a95f31139b2781b21995ad9"
-  integrity sha512-u7haqNip6oDmtNpLKYSduRCdKIOmIneHzcmRjNRayNkq7J/hZgKXkzp6K91X9AA1QUPQjyv0xUxhfpvsx/h3rA==
+"@hollysys-mirco-front-end/framework@^0.0.1":
+  version "0.0.1"
+  resolved "https://registry.npmjs.org/@hollysys-mirco-front-end/framework/-/framework-0.0.1.tgz#21051455eabbc89cedefb8e2db0f98368322052d"
+  integrity sha512-ccdSQx2RWQaVhoZHain8u2mZ352/acEhbpz+quIHellDLVo1iqUshvzpBbbkaKvAkeERO1T8muUY1xLSDtR75w==
   dependencies:
     typescript latest
 
