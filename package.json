@@ -1,11 +1,11 @@
 {
   "name": "@hollysys-mirco-front-end/app-vue-example",
-  "version": "0.0.23",
+  "version": "0.0.24",
   "description": "微前端应用示例",
   "main": "lib/hollysys-mirco-front-end-app-vue-example.umd.js",
   "module": "lib/hollysys-mirco-front-end-app-vue-example.umd.js",
   "scripts": {
-    "serve": "vue-cli-service serve --mode development",
+    "serve": "vue-cli-service serve --mode development --open",
     "build": "vue-cli-service build",
     "build:lib": "set build_lib=true && vue-cli-service build --target lib --dest ./lib --name hollysysMircoFrontEndAppVueExample --filename hollysys-mirco-front-end-app-vue-example ./src/main.js",
     "lint": "vue-cli-service lint"
@@ -24,7 +24,7 @@
   },
   "homepage": "https://github.com/arashiquan33/hollysys-mirco-front-end-app-vue-example#readme",
   "dependencies": {
-    "@hollysys-mirco-front-end/framework": "^0.0.1",
+    "@hollysys-mirco-front-end/framework": "^0.0.32",
     "core-js": "^3.6.5",
     "vue": "^2.6.11"
   },
