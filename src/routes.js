@@ -6,10 +6,13 @@ import HelloChina from "./components/HelloChina.vue";
 // 通过 Vue.extend() 创建的组件构造器，
 // 或者，只是一个组件配置对象。
 
-const routes = [
-  { path: "/helloWorld", component: HelloWorld },
-  { path: "/helloChina", component: HelloChina }
-];
+const getRoutes = function(routerBasePath) {
+  let routes = [
+    { path: `${routerBasePath}/helloWorld`, component: HelloWorld },
+    { path: `${routerBasePath}/helloChina`, component: HelloChina }
+  ];
+  return routes;
+};
 
 // 3. 创建 router 实例，然后传 `routes` 配置
 // 你还可以传别的配置参数, 不过先这么简单着吧。
@@ -17,4 +20,4 @@ const routes = [
 //   routes // (缩写) 相当于 routes: routes
 // });
 
-export default routes;
+export default getRoutes;

@@ -1,6 +1,6 @@
 import Vue from "vue";
 import App from "./App.vue";
-import routes from "./routes";
+import getRoutes from "./routes";
 import VueRouter from "vue-router";
 import {
   HollysysMircoFrontEndApp,
@@ -11,13 +11,12 @@ Vue.config.productionTip = false;
 
 const hollysysMircoFrontEndAppVueExample = new HollysysMircoFrontEndApp({
   name: process.env.npm_package_name,
-  pathPrefix: "/demo1",
   beforeInstall: function() {
     return Promise.resolve();
   },
-  install: function({ mountTo, props, base = "/example" }) {
+  install: function({ mountTo, props,routerBasePath='' }) {
+    let routes = getRoutes(routerBasePath);
     let router = new VueRouter({
-      base,
       routes // (缩写) 相当于 routes: routes
     });
     this.instance = new Vue({

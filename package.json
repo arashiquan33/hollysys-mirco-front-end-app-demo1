@@ -8,6 +8,7 @@
     "serve": "vue-cli-service serve --mode development --open",
     "build": "vue-cli-service build",
     "build:lib": "set build_lib=true && vue-cli-service build --target lib --dest ./lib --name hollysysMircoFrontEndAppVueExample --filename hollysys-mirco-front-end-app-vue-example ./src/main.js",
+    "build:all":"yarn build && yarn build:lib",
     "lint": "vue-cli-service lint"
   },
   "repository": {
