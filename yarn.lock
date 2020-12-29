@@ -878,10 +878,10 @@
   dependencies:
     "@hapi/hoek" "^8.3.0"
 
-"@hollysys-mirco-front-end/framework@^0.0.1":
-  version "0.0.1"
-  resolved "https://registry.npmjs.org/@hollysys-mirco-front-end/framework/-/framework-0.0.1.tgz#21051455eabbc89cedefb8e2db0f98368322052d"
-  integrity sha512-ccdSQx2RWQaVhoZHain8u2mZ352/acEhbpz+quIHellDLVo1iqUshvzpBbbkaKvAkeERO1T8muUY1xLSDtR75w==
+"@hollysys-mirco-front-end/framework@^0.0.32":
+  version "0.0.32"
+  resolved "https://registry.npmjs.org/@hollysys-mirco-front-end/framework/-/framework-0.0.32.tgz#05deb1af0dea402bc1b429067f7df77c0ae93710"
+  integrity sha512-8eYK1vQebt/Qfo14E7nZ0B7DpUHMUiPx+lLtbrlLH6QYKIAgLJkWgy+iypLeGpFYkM0p1uXmu7Ic7nGykMeypA==
   dependencies:
     typescript latest
 
@@ -8224,7 +8224,7 @@ vue-template-es2015-compiler@^1.9.0:
 
 vue@^2.6.11:
   version "2.6.12"
-  resolved "https://registry.npm.taobao.org/vue/download/vue-2.6.12.tgz?cache=0&sync_timestamp=1606946082061&other_urls=https%3A%2F%2Fregistry.npm.taobao.org%2Fvue%2Fdownload%2Fvue-2.6.12.tgz#f5ebd4fa6bd2869403e29a896aed4904456c9123"
+  resolved "https://registry.npm.taobao.org/vue/download/vue-2.6.12.tgz?cache=0&sync_timestamp=1606946204934&other_urls=https%3A%2F%2Fregistry.npm.taobao.org%2Fvue%2Fdownload%2Fvue-2.6.12.tgz#f5ebd4fa6bd2869403e29a896aed4904456c9123"
   integrity sha1-9evU+mvShpQD4pqJau1JBEVskSM=
 
 watchpack-chokidar2@^2.0.1:

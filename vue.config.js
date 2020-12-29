@@ -15,7 +15,7 @@ module.exports = {
       //然后微应用内部通过import Vue from 'Vue',import { HollysysMircoFrontEndApp } from "@hollysys-mirco-front-end/framework";引入
       config.plugin("html").tap(args => {
         args[0].template =
-          "node_modules/@hollysys-mirco-front-end/framework/lib/standalone.html";
+          "node_modules/@hollysys-mirco-front-end/framework/dist/standalone.html";
         return args;
       });
       config.plugin("cleanDist").use(new CleanWebpackPlugin());

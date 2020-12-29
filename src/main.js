@@ -1,6 +1,7 @@
 import Vue from "vue";
 import App from "./App.vue";
- import router from "./router";
+import routes from "./routes";
+import VueRouter from "vue-router";
 import {
   HollysysMircoFrontEndApp,
   HollysysMircoFrontEndAppManager
@@ -14,7 +15,11 @@ const hollysysMircoFrontEndAppVueExample = new HollysysMircoFrontEndApp({
   beforeInstall: function() {
     return Promise.resolve();
   },
-  install: function({ mountTo, props }) {
+  install: function({ mountTo, props, base = "/example" }) {
+    let router = new VueRouter({
+      base,
+      routes // (缩写) 相当于 routes: routes
+    });
     this.instance = new Vue({
       props,
       router,
@@ -28,6 +33,11 @@ const hollysysMircoFrontEndAppVueExample = new HollysysMircoFrontEndApp({
   beforeUninstall: function() {}
 });
 
-HollysysMircoFrontEndAppManager.installApp(hollysysMircoFrontEndAppVueExample);
+if (window._HOLLYSYS_MIRCO_FRONT_END_STAND_ALONE) {
+  const hollysysMircoFrontEndAppManager = HollysysMircoFrontEndAppManager.getInstance();
+  hollysysMircoFrontEndAppManager.installApp(
+    hollysysMircoFrontEndAppVueExample
+  );
+}
 
 export default hollysysMircoFrontEndAppVueExample;
