@@ -1,6 +1,6 @@
 {
   "name": "@hollysys-mirco-front-end/app-vue-example",
-  "version": "0.0.24",
+  "version": "0.0.2",
   "description": "微前端应用示例",
   "main": "lib/hollysys-mirco-front-end-app-vue-example.umd.js",
   "module": "lib/hollysys-mirco-front-end-app-vue-example.umd.js",
